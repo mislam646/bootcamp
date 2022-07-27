@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import com.pages.AdminPage;
 
@@ -12,6 +13,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class AdminSteps {
 	WebDriver driver;
@@ -19,9 +21,11 @@ public class AdminSteps {
 	
 	@Given("^user go to Orange HRM home page$")
 	public void user_go_to_Orange_HRM_home_page() throws Throwable {
-	    System.setProperty("webdriver.chrome.driver", "C:\\Driver\\chromedriver.exe");
-	    
-	    driver = new ChromeDriver();
+		ChromeOptions chromeOptions = new ChromeOptions();
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver(chromeOptions);
+	    //System.setProperty("webdriver.chrome.driver", "C:\\Driver\\chromedriver.exe");  
+	    //driver = new ChromeDriver();
 	    
 	    driver.get("https://opensource-demo.orangehrmlive.com/");
 	    driver.manage().window().maximize();
