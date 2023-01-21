@@ -22,7 +22,7 @@ public class AdminSteps {
 	@Given("^user go to Orange HRM home page$")
 	public void user_go_to_Orange_HRM_home_page() throws Throwable {
 		ChromeOptions chromeOptions = new ChromeOptions();
-		WebDriverManager.chromedriver().setup();
+		//WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver(chromeOptions);
 	    //System.setProperty("webdriver.chrome.driver", "C:\\Driver\\chromedriver.exe");  
 	    //driver = new ChromeDriver();

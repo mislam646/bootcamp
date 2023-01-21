@@ -11,7 +11,7 @@ public class DemoAssert {
 
 	public static void main(String[] args) {
 		//Setting the system property
-		System.setProperty("webdriver.chrome.driver", "C:\\Driver\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\Driver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		
 		//Opening browser

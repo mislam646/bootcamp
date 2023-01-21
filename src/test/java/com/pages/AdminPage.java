@@ -13,13 +13,13 @@ public class AdminPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy (how =How.XPATH, using ="//*[@name='txtUsername']")
+	@FindBy (how =How.XPATH, using ="//*[@name='username']")
 	private static WebElement username;
 	
-	@FindBy (how =How.XPATH, using ="//*[@name='txtPassword']")
+	@FindBy (how =How.XPATH, using ="//*[@name='password']")
 	private static WebElement password;
 	
-	@FindBy (how =How.XPATH, using ="//*[@id='btnLogin']")
+	@FindBy (how =How.XPATH, using ="//*[@type='submit']")
 	private static WebElement login;
 	
 	@FindBy (how =How.XPATH, using ="//h1[contains(text(),'Dashboard')]")

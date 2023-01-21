@@ -47,7 +47,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jul 26, 2022 08:05:11 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jan 21, 2023 09:41:36 AM</span>
 				</a>
 			</li>
 			<li>
@@ -163,7 +163,7 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>6</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -183,12 +183,12 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify Admin list is visible for Orange HRM</span>
-						<span class='test-time'>Jul 26, 2022 08:05:12 PM</span>
+						<span class='test-time'>Jan 21, 2023 09:41:36 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 0m 11s+710ms</span>
+	<span class='duration right label'>0h 0m 9s+809ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Able to select admin under user role</span>
@@ -222,7 +222,23 @@
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And user verify "Dashboardj" word on page</span>
+			<span class="bdd-step-name">And user verify page title as "OrangeHRM"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='7' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then user click on the admin tab</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='8' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And user select "Admin" under user role</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -305,7 +321,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 26, 2022 08:05:12 PM</td>
+										<td>Jan 21, 2023 09:41:36 AM</td>
 										<td class='linked' test-id='1'>Verify Admin list is visible for Orange HRM</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -347,25 +363,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>6</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 26, 2022 08:05:11 PM</div>
+					<div class='panel-lead'>Jan 21, 2023 09:41:36 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 26, 2022 08:05:24 PM</div>
+			 		<div class='panel-lead'>Jan 21, 2023 09:41:46 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 12s+337ms</div>
+					<div class='panel-lead'>0h 0m 10s+153ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -459,7 +475,7 @@
 				infoChild: 0,
 				exceptionsChild: 0,
 				
-				passGrandChild: 4,
+				passGrandChild: 6,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
